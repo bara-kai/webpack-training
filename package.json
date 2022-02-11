@@ -1,0 +1,25 @@
+{
+  "name": "webpack-training",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bara-kai/webpack-training.git"
+  },
+  "author": "barakai",
+  "license": "UNLICENSED",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/bara-kai/webpack-training/issues"
+  },
+  "homepage": "https://github.com/bara-kai/webpack-training#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
+  }
+}
