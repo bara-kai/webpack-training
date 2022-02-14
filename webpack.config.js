@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-  mode: 'development',
+  // mode: 'development',
   devtool: 'source-map',
   entry: './src/javascripts/main.js',
   output: {
@@ -22,6 +22,7 @@ module.exports = {
             options: {
               presets: [
                 ['@babel/preset-env', { targets: '> 0.25%, not dead' }],
+                '@babel/preset-react',
               ],
             },
           },
