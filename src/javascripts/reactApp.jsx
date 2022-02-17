@@ -14,10 +14,10 @@ const AppContainer = styled.div`
 
 const App = (props) => {
   return (
-  <AppContainer>
-  Hellor, React App!
-  <Alert message="Success!" />
-  </AppContainer>
+    <AppContainer>
+      <p>Hello, React App!!!!!!</p>
+      <Alert message="Success!" />
+    </AppContainer>
   );
 };
 
@@ -25,5 +25,5 @@ const reactRoot = document.getElementById('react-root');
 if (reactRoot) {
   ReactDom.render(<App />, reactRoot);
 } else {
-  console.log('No root elemet found');
+  console.log('No root element found');
 }
