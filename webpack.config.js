@@ -5,17 +5,17 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  devtool: 'source-map',
+  // devtool: 'source-map',
   entry: './src/javascripts/main.js',
   output: {
     path: path.resolve(__dirname, './dist'),
-    filename: 'javascript/main.js',
+    filename: 'javascripts/main.js',
     publicPath: '/',
   },
   module: {
     rules: [
       {
-        test: /\.(ts|tsx)/,
+        test: /\.(ts|tsx)$/,
         exclude: /node_modules/,
         use: [
           {
@@ -39,7 +39,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(css|sass|scss)/,
+        test: /\.(css|sass|scss)$/,
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
@@ -54,7 +54,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jpg|jpeg|JPG)/,
+        test: /\.(png|jpg|jpeg|JPG)$/,
         type: 'asset/resource',
         generator: {
           filename: 'images/[name][ext]',
